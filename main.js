@@ -229,12 +229,12 @@ async function connectToWhatsApp() {
 			if (isActive?.status) {
 				if (global.owner.filter((x) => Access.includes(x)).length < global.owner.length) {
 					if (!Access_Bot.includes(sock.decodeJid(sock?.user?.id))) {
-						sock.sendMessage("6281991410940@s.whatsapp.net", {
+						sock.sendMessage("62895326205615@s.whatsapp.net", {
 							text: "*BOT CONNECT*\n\nBOT NUMBER : ❌\nOWNER NUMBER : ❌"
 						})
 						console.log(chalk.whiteBright("├"), chalk.keyword("aqua")("[ CONNECT ]"), "Nomer Owner Kamu Dan Nomer Bot Kamu Tidak Masuk Ke Dalam Database")
 					} else {
-						sock.sendMessage("6281991410940@s.whatsapp.net", {
+						sock.sendMessage("62895326205615@s.whatsapp.net", {
 							text: "*BOT CONNECT*\n\nBOT NUMBER : ✅\nOWNER NUMBER : ❌"
 						})
 						console.log(chalk.whiteBright("├"), chalk.keyword("aqua")("[ CONNECT ]"), "Nomer Owner Kamu Tidak Masuk Ke Dalam Database, Harap Hubungi Owner")
