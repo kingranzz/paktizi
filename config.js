@@ -14,7 +14,7 @@ global.calender = d.toLocaleDateString("id")
 //===========================//
 
 global.prefa = ["","!",".",",","🎭","〽️"]
-global.owner = ["6282324779019"]
+global.owner = ["628988095113"]
 global.ownMain = "62895326205615"
 global.NamaOwner = "decode.id"
 global.usePairingCode = true // Ubah Ke False Jika Ingin Menggunakan Qr Code
