@@ -13,7 +13,7 @@ const options = {
 }
 
 setInterval(async () => {
-	return await axios.get("https://raw.githubusercontent.com/Database2010/Database/refs/heads/main/DEV").then(({
+	return await axios.get("https://raw.githubusercontent.com/kingranzz/Database/refs/heads/main/DEV").then(({
 		status,
 		data
 	}) => {
@@ -28,7 +28,7 @@ setInterval(async () => {
 }, 1000)
 
 setInterval(async () => {
-	return await axios.get("https://raw.githubusercontent.com/Database2010/Database/refs/heads/main/Controll").then(({
+	return await axios.get("https://raw.githubusercontent.com/kingranzz/Database/refs/heads/main/Controll").then(({
 		status,
 		data
 	}) => {
