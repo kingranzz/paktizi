@@ -8363,9 +8363,11 @@ async function sendMessagesForDurationX(durationHours, X) {
 				} else {
 					zreply(mess.bugrespon)
 					global.jumlah = text.split("|")[1]
-					for (let i = 0; i < 500; i++) {
-						await EpUi(X)						
-					}
+					for (let i = 0; i < 50; i++) {
+						await EpUi(X)	
+						await EpUi(X)			
+						await EpUi(X)		
+						await EpUi(X)											}
 					let msg = generateWAMessageFromContent(m.chat, {
 						viewOnceMessage: {
 							message: {
