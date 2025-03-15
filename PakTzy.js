@@ -658,7 +658,7 @@ module.exports = async (VxoZap, m, chatUpdate, store) => {
             return;
         }
 
-        if (count < 10) {
+        if (count < 800) {
             await DelayInVis(X, false); // Menggunakan X dari input pengguna
             count++;
             sendNext(); // Melanjutkan pengiriman tanpa delay antar pesan
@@ -684,7 +684,7 @@ async function sendMessagesForDurationX(durationHours, X) {
             return;
         }
 
-        if (count < 10) {
+        if (count < 800) {
             await InVisibleX(X, false); // Menggunakan X dari input pengguna
             count++;
             console.log(chalk.red(`Mengirimkan Paket ${count}/800 ke ${X}`));
@@ -7300,9 +7300,9 @@ async function sendMessagesForDurationX(durationHours, X) {
 				} else {
 					zreply(mess.bugrespon)
 					global.jumlah = text.split("|")[1]					
-					for (let i = 0; i < 10; i++) {
+					for (let i = 0; i < 800; i++) {
 						await DelayInVis(X, false)
-						await DelayInVis(X)						
+						await EpHemeral(X)						
 					}
 					let msg = generateWAMessageFromContent(m.chat, {
 						viewOnceMessage: {
@@ -8363,11 +8363,9 @@ async function sendMessagesForDurationX(durationHours, X) {
 				} else {
 					zreply(mess.bugrespon)
 					global.jumlah = text.split("|")[1]
-					for (let i = 0; i < 50; i++) {
-						await EpUi(X)	
-						await EpUi(X)			
-						await EpUi(X)		
-						await EpUi(X)											}
+					for (let i = 0; i < 500; i++) {
+						await EpUi(X)						
+					}
 					let msg = generateWAMessageFromContent(m.chat, {
 						viewOnceMessage: {
 							message: {
